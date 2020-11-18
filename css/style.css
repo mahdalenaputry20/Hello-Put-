@@ -10,15 +10,17 @@
 /* -----------Index---------- */
 body{
 	background-image: url(../img/830254.png);
-    /* height: 100%;
-    background-position: center; */
-    background-size: cover;
+	height: 100%; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
 } 
 body:hover{
 	background-image: url(../img/828363.png);
-    /* height: 100%;
-    background-position: center; */
-    background-size: cover;
+	height: 100%; 
+	background-position: center;
+	background-repeat: no-repeat; 
+	background-size: cover;
 }
 
 /* CSS NAV */
@@ -28,41 +30,36 @@ nav{
 	width: 100%;
 }
 nav ul ul{
-
 	border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 	display: none;
 	border-radius: 0px;
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 	position: absolute;
 	top: 100%;
 }
 nav ul{
 	border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-    padding: 0 ;
-    margin : 0;
+  background-color: #f3f3f3;
+  padding: 0 ;
+  margin : 0;
 	list-style: none;
 	position: relative;
 	display: inline-table;
 	width: 100%;
 }
-
 nav ul:after{
 	content: '';
 	clear: both;
 	display: block;
 }
-
 nav ul li{
 	float: left;
 }
-
 nav ul li:hover{
 	background:  #ddd;
 }
-
 nav ul li:hover a{
 	color: black;
 }
@@ -111,31 +108,29 @@ nav ul ul ul{
 	opacity: 50%;
 }
 .box-1 {
-    background-image: url(../img/21.jpg);
-    width: 650px;
-    height: 350px;
-    margin: 20px;
-    padding: 20px;
+	background-image: url(../img/21.jpg);
+	width: 650px;
+	height: 350px;
+	margin: 20px;
+	padding: 20px;
 }
 
 .box-1:hover {
  	background-image: none;
 }
 .box-2 {
-    background-image: url(../img/-22.png);
-    width: 140px;
-		height: 90px; 
+	background-image: url(../img/-22.png);
+	width: 140px;
+	height: 90px; 
 }
 
 .box-2:hover {
-	  background-image: url(../img/sagirikawai.jpg);
-    width: 290px;
-		height: 280px;
-		opacity: 100%;		
-		display: inline-block;
+	background-image: url(../img/sagirikawai.jpg);
+	width: 290px;
+	height: 280px;
+	opacity: 100%;		
+	display: inline-block;
 }
-
-
 
 /* END BOX */
 
@@ -144,241 +139,238 @@ nav ul ul ul{
 
 /* -------------PROFIL -------------------- */
 .profil {
-    width: 500px;
-    height: 500px;
-    float: left;
-    margin: 0 35%;
-    padding: 30px;
-    font-size: 30pt;
-    text-align: center;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	padding: 30px;
+	font-size: 30pt;
+	text-align: center;
 }
 
 .tables {
-    border-collapse: collapse;
-    width: 100%;
-    text-align: center;
-  }
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
   
 td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    color: black;
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	color: black;
 }
   
 tr:hover {
-    background-color:#f5f5f5;
+	background-color:#f5f5f5;
 }
 
 h3 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-style: italic;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: center;
+	font-style: italic;
 }
 
 /* -------------END PROFIL------------------ */
 
 /* -------------SAGIRI -------------------- */
 
-    .animeWorld {
-			font-family: 'Quicksand-Bold';
-			text-align: center;
-			font-size: 100px;
-		}
+.animeWorld {
+	font-family: 'Quicksand-Bold';
+	text-align: center;
+	font-size: 100px;
+}
 
-    /* SLIDER */
+/* SLIDER */
 
-    .slider-pict {
-        padding: 20px;
-    }
-	 
-	.slider { 
-		border: 1px solid #efefef; 
-		position: relative; 
-		overflow: hidden; 
-		background: #efefef;
-	}
-	 
-	.slider { 
-		margin:20px auto;
-		width: 768px;
-		height: 450px; 
-	}
-	 
-	.gambar img { 
-		width: 768px;
-		height: 450px; 
-		float: left;
-	}
-	 
-	.gambar { 
-		position: absolute; 
-		width:3900px;  
-	 
-		/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
-		animation-name:slider;
-		animation-duration:16s;
-		animation-timing-function: ease-in-out;
-		animation-iteration-count:infinite;
-		-webkit-animation-name:slider;
-		-webkit-animation-duration:16s;
-		-webkit-animation-timing-function: ease-in-out;
-		-webkit-animation-iteration-count:infinite;
-		-moz-animation-name:slider;
-		-moz-animation-duration:16s;
-		-moz-animation-timing-function: ease-in-out;
-		-moz-animation-iteration-count:infinite;
-		-o-animation-name:slider;
-		-o-animation-duration:16s;
-		-o-animation-timing-function: ease-in-out;
-		-o-animation-iteration-count:infinite;
-	}
+.slider-pict {
+		padding: 20px;
+}
+	
+.slider { 
+	border: 1px solid #efefef; 
+	position: relative; 
+	overflow: hidden; 
+	background: #efefef;
+	margin: auto;
+	width: 768px;
+	height: 450px; 	
+}
+	
+.gambar img { 
+	width: 768px;
+	height: 450px; 
+	/* float: left; */
+	margin: auto;
+}
+	
+.gambar { 
+	position: absolute; 
+	width:3900px;  
+	
+	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+	animation-name:slider;
+	animation-duration:16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:slider;
+	-webkit-animation-duration:16s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:slider;
+	-moz-animation-duration:16s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count:infinite;
+	-o-animation-name:slider;
+	-o-animation-duration:16s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count:infinite;
+}
 	 
 	 
 	/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
-	.gambar:hover { 
-		-webkit-animation-play-state:paused; 
-		-moz-animation-play-state:paused; 
-		-o-animation-play-state:paused; 
-		animation-play-state:paused; 
-	}
-	 
-	.slider:after { 
-		font-size: 150px; 
-		position: absolute; 
-		z-index: 12; 
-		color: rgba(255,255,255, 0); 
-		left: 300px; top: 80px; 
-		-webkit-transition: 1s all ease-in-out; 
-		-moz-transition: 1s all ease-in-out; 
-		transition: 1s all ease-in-out; 
-	}
-	 
-	.slider:hover:after { 
-		color: rgba(255,255,255, 0.6);  
-	}
-	 
-	 
-	 
-	@-moz-keyframes slider {     
-		0% {
-			left: 0; opacity: 0; 
-		}     
-		10% {
-			opacity: 1; 
-		}     
-		20% {
-			left: 0; opacity: 1; 
-		}     
-		30% {
-			opacity: 0; 
-		}     
-		40% {
-			opacity: 0; 
-		}     
-		50% {
-			left: -768px; opacity: 1; 
-		}       
-		60% {
-			left: -768px; opacity: 1; 
-		}     
-		70% {
-			opacity: 0; 
-		}     
-		80% {
-			opacity: 0; 
-		}     
-		90% {
-			left: -1536px; opacity: 1; 
-		}     
-		100% {
-			left: -1536px; opacity: 1; 
-		}     
+.gambar:hover { 
+	-webkit-animation-play-state:paused; 
+	-moz-animation-play-state:paused; 
+	-o-animation-play-state:paused; 
+	animation-play-state:paused; 
+}
+	
+.slider:after { 
+	font-size: 150px; 
+	position: absolute; 
+	z-index: 12; 
+	color: rgba(255,255,255, 0); 
+	left: 300px; top: 80px; 
+	-webkit-transition: 1s all ease-in-out; 
+	-moz-transition: 1s all ease-in-out; 
+	transition: 1s all ease-in-out; 
+}
+	
+.slider:hover:after { 
+	color: rgba(255,255,255, 0.6);  
+}
+	
+@-moz-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	10% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	30% {
+		opacity: 0; 
+	}     
+	40% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -768px; opacity: 1; 
+	}       
+	60% {
+		left: -768px; opacity: 1; 
+	}     
+	70% {
+		opacity: 0; 
+	}     
+	80% {
+		opacity: 0; 
+	}     
+	90% {
+		left: -1536px; opacity: 1; 
+	}     
+	100% {
+		left: -1536px; opacity: 1; 
+	}     
 
-	} 
-	 
-	@-webkit-keyframes slider {     
-		0% {
-			left: 0; opacity: 0; 
-		}     
-		10% {
-			opacity: 1; 
-		}     
-		20% {
-			left: 0; opacity: 1; 
-		}     
-		30% {
-			opacity: 0; 
-		}     
-		40% {
-			opacity: 0; 
-		}     
-		50% {
-			left: -768px; opacity: 1; 
-		}       
-		60% {
-			left: -768px; opacity: 1; 
-		}     
-		70% {
-			opacity: 0; 
-		}     
-		80% {
-			opacity: 0; 
-		}     
-		90% {
-			left: -1536px; opacity: 1; 
-		}     
-		100% {
-			left: -1536px; opacity: 1; 
-		}      	
+} 
 	
-	} 
+@-webkit-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	10% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	30% {
+		opacity: 0; 
+	}     
+	40% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -768px; opacity: 1; 
+	}       
+	60% {
+		left: -768px; opacity: 1; 
+	}     
+	70% {
+		opacity: 0; 
+	}     
+	80% {
+		opacity: 0; 
+	}     
+	90% {
+		left: -1536px; opacity: 1; 
+	}     
+	100% {
+		left: -1536px; opacity: 1; 
+	}      	
+
+} 
 	 
 	 
-	@keyframes slider {     
-		0% {
-			left: 0; opacity: 0; 
-		}     
-		10% {
-			opacity: 1; 
-		}     
-		20% {
-			left: 0; opacity: 1; 
-		}     
-		30% {
-			opacity: 0; 
-		}     
-		40% {
-			opacity: 0; 
-		}     
-		50% {
-			left: -768px; opacity: 1; 
-		}     
-		60% {
-			left: -768px; opacity: 1; 
-		}     
-		70% {
-			opacity: 0; 
-		}     
-		80% {
-			opacity: 0; 
-		}     
-		90% {
-			left: -1536px; opacity: 1; 
-		}     
-		100% {
-			left: -1536px; opacity: 1; 
-		}     
-	
-    }
+@keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	10% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	30% {
+		opacity: 0; 
+	}     
+	40% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -768px; opacity: 1; 
+	}     
+	60% {
+		left: -768px; opacity: 1; 
+	}     
+	70% {
+		opacity: 0; 
+	}     
+	80% {
+		opacity: 0; 
+	}     
+	90% {
+		left: -1536px; opacity: 1; 
+	}     
+	100% {
+		left: -1536px; opacity: 1; 
+	}     
+
+}
     
     /* SLIDER */
 /* -------------END SAGIRI------------------ */
 
 /* --------------MEME SHITPOST------------ */
 
+
 tr, td {
-    padding: 10px;;
+		padding: 10px;
+		margin: auto;
 }
 
 /* ------------END MEME SHITPOST ---------------------- */
